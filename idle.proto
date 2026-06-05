@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message Group {
+    string name = 1;
+}
+
+message Idle {
+    string name = 1;
+    repeated Group belongs_to = 2;
+}
+
+message Result {
+    repeated Idle idles = 1;
+}
